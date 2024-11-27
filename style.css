@@ -1,5 +1,6 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,14 +9,35 @@ body {
 }
 
 header {
-    background: #333;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
     color: #fff;
     text-align: center;
     padding: 1em 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
     margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5722;
 }
 
 section {
@@ -39,6 +61,12 @@ section {
     max-width: 200px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #social-links ul {
@@ -53,10 +81,13 @@ section {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 #social-links a:hover {
-    text-decoration: underline;
+    color: #ff5722;
 }
 
 footer {
@@ -65,4 +96,48 @@ footer {
     background: #333;
     color: #fff;
     margin-top: 20px;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #e64a19;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }

@@ -4,38 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Model Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS File -->
     <link rel="stylesheet" href="style.css">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Lovely_Kotla Portfolio</h1>
+    <header class="animate__animated animate__fadeInDown">
+        <h1>Welcome to Sai Manaswini Kotla Portfolio</h1>
     </header>
+    <nav>
+        <a href="#bio">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#social-links">Connect</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <section id="bio">
         <h2>About</h2>
-        <p>Lovely_Kotla is a passionate model with an eye for fashion and creativity. Check out her amazing work below!</p>
+        <p>Sai Manaswini Kotla is a talented model with a passion for creativity and fashion. Explore her work below!</p>
     </section>
     <section id="gallery">
         <h2>Photo Gallery</h2>
         <div class="gallery">
-            <!-- Replace src values with your image file names -->
-            <img src="IMG-20241127-WA0001.jpg" alt="Photo 1">
-            <img src="IMG-20241127-WA0002.jpg" alt="Photo 2">
-            <img src="IMG-20241127-WA0003.jpg" alt="Photo 3">
-	    <img src="IMG-20241127-WA0004.jpg" alt="Photo 4">
-	    <img src="IMG-20241127-WA0005.jpg" alt="Photo 5">
-	    <img src="IMG-20241127-WA0006.jpg" alt="Photo 6">
-	    <img src="IMG-20241127-WA0007.jpg" alt="Photo 7">
+            <a href="IMG-20241127-WA0001.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0001.jpg" alt="Photo 1"></a>
+            <a href="IMG-20241127-WA0003.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0003.jpg" alt="Photo 2"></a>
+            <a href="IMG-20241127-WA0002.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0002.jpg" alt="Photo 3"></a>
+	    <a href="IMG-20241127-WA0006.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0006.jpg" alt="Photo 4"></a>
+	    <a href="IMG-20241127-WA0007.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0007.jpg" alt="Photo 5"></a>
+	    <a href="IMG-20241127-WA0004.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0004.jpg" alt="Photo 6"></a>
+	    <a href="IMG-20241127-WA0005.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0005.jpg" alt="Photo 7"></a>
         </div>
     </section>
     <section id="social-links">
         <h2>Connect</h2>
-        <p>Follow Lovely_Kotla on social media:</p>
         <ul>
-            <li><a href="https://www.instagram.com/lovely_kotla" target="_blank">Instagram</a></li>
+            <li><a href="https://www.instagram.com/lovely_kotla" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://www.threads.net/@lovely_kotla?xmt=AQGztflrwHqWYLjiYGrHc2l07iEiGG15zjurZJg1btkJXz8" target="_blank"><i class="fab fa-threads"></i> Threads</a></li>
         </ul>
     </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/xpwzylop" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2024 Lovely_Kotla Portfolio</p>
+        <p>&copy; 2024 Sai Manaswini Kotla Portfolio</p>
     </footer>
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
