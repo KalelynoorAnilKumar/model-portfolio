@@ -1,0 +1,34 @@
+{
+  "name": "model-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://KalelynoorAnilKumar@github.com/KalelynoorAnilKumar/model-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KalelynoorAnilKumar/model-portfolio/issues"
+  },
+  "homepage": "https://github.com/KalelynoorAnilKumar/model-portfolio#readme",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "autoprefixer": "^10.6.0",
+    "lightgallery": "^2.9.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "lightgallery": "^2.7.2"
+  }
+}

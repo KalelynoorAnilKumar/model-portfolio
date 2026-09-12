@@ -1,76 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model Portfolio</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Animate.css -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <title>Sai Manaswini Kotla | Portfolio & Representation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header class="animate__animated animate__fadeInDown">
-        <h1>Welcome to Sai Manaswini Kotla Portfolio</h1>
-    </header>
-    <nav>
-        <a href="#bio">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#social-links">Connect</a>
-        <a href="#contact">Contact</a>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-rose-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-xl tracking-wider uppercase font-semibold text-rose-400">Sai Manaswini</a>
+            <div class="flex items-center gap-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-rose-400 transition-colors">About</a>
+                <a href="#portfolio" class="hover:text-rose-400 transition-colors">Portfolio</a>
+                <a href="#stats" class="hover:text-rose-400 transition-colors">Specs</a>
+                <a href="#contact" class="hover:text-rose-400 transition-colors">Booking</a>
+            </div>
+        </div>
     </nav>
-    <section id="bio">
-        <h2>About</h2>
-        <p>Sai Manaswini Kotla is a talented model with a passion for creativity and fashion. Explore her work below!</p>
-    </section>
-    <section id="gallery">
-        <h2>Photo Gallery</h2>
-        <div class="gallery">
-            <a href="IMG-20241127-WA0001.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0001.jpg" alt="Photo 1"></a>
-            <a href="IMG-20241127-WA0003.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0003.jpg" alt="Photo 2"></a>
-            <a href="IMG-20241127-WA0002.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0002.jpg" alt="Photo 3"></a>
-	    <a href="IMG-20241127-WA0006.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0006.jpg" alt="Photo 4"></a>
-	    <a href="IMG-20241127-WA0007.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0007.jpg" alt="Photo 5"></a>
-	    <a href="IMG-20241127-WA0004.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0004.jpg" alt="Photo 6"></a>
-	    <a href="IMG-20241127-WA0005.jpg" data-lightbox="gallery"><img src="IMG-20241127-WA0005.jpg" alt="Photo 7"></a>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-rose-950/20 via-zinc-950 to-amber-950/10 -z-10"></div>
+        <div class="text-center max-w-3xl mx-auto space-y-6">
+            <p class="text-rose-400 font-medium tracking-widest uppercase text-xs">High Fashion • Editorial • Commercial</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-light tracking-tight leading-tight">Sai Manaswini Kotla</h1>
+            <p class="text-zinc-400 text-lg md:text-xl font-light max-w-xl mx-auto">Embodying elegance, artistic versatility, and high-fashion movement for global brands and creative editorials.</p>
+            <div class="pt-4 flex justify-center gap-4">
+                <a href="#portfolio" class="px-8 py-3.5 bg-rose-500 hover:bg-rose-600 text-white font-medium rounded-full transition-all transform hover:-translate-y-0.5 shadow-lg shadow-rose-500/25">Explore Gallery</a>
+                <a href="#contact" class="px-8 py-3.5 border border-zinc-700 hover:border-zinc-500 text-zinc-300 font-medium rounded-full transition-all">Booking Inquiries</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 max-w-5xl mx-auto px-6 border-t border-zinc-900">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-4">
+                <h2 class="font-serif text-3xl md:text-4xl">About & Vision</h2>
+                <div class="w-12 h-0.5 bg-rose-500"></div>
+                <p class="text-zinc-400 leading-relaxed font-light pt-2">
+                    Sai Manaswini Kotla is an editorial and commercial fashion model defined by visual narrative, strength, and fluidity. Working across high fashion, digital campaigns, and couture showcases, she brings concepts to life with professional versatility and expressive poise.
+                </p>
+                <div class="pt-2 grid grid-cols-2 gap-4 text-sm text-zinc-300">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-500"></i> Runway & Couture</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-500"></i> Editorial Print</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-500"></i> Brand Campaigns</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-check text-rose-500"></i> Lookbooks</div>
+                </div>
+            </div>
+
+            <!-- Model Measurements Card -->
+            <div id="stats" class="bg-zinc-900/50 p-8 rounded-2xl border border-zinc-800/80 space-y-4">
+                <h3 class="font-serif text-xl border-b border-zinc-800 pb-3 text-rose-400">Model Specifications</h3>
+                <div class="grid grid-cols-2 gap-y-3 text-sm">
+                    <span class="text-zinc-400">Height</span><span class="font-medium text-right">5' 8" (173 cm)</span>
+                    <span class="text-zinc-400">Bust</span><span class="font-medium text-right">32"</span>
+                    <span class="text-zinc-400">Waist</span><span class="font-medium text-right">25"</span>
+                    <span class="text-zinc-400">Hips</span><span class="font-medium text-right">35"</span>
+                    <span class="text-zinc-400">Hair Color</span><span class="font-medium text-right">Dark Brown</span>
+                    <span class="text-zinc-400">Eye Color</span><span class="font-medium text-right">Brown</span>
+                    <span class="text-zinc-400">Location</span><span class="font-medium text-right">Hyderabad, IN</span>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="social-links">
-        <h2>Connect</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/lovely_kotla" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-            <li><a href="https://www.threads.net/@lovely_kotla?xmt=AQGztflrwHqWYLjiYGrHc2l07iEiGG15zjurZJg1btkJXz8" target="_blank"><i class="fab fa-threads"></i> Threads</a></li>
-        </ul>
+
+    <!-- Portfolio Gallery Section -->
+    <section id="portfolio" class="py-24 max-w-6xl mx-auto px-6 border-t border-zinc-900">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="font-serif text-4xl">Featured Editorial Work</h2>
+            <p class="text-zinc-400 text-sm tracking-wide">Select an image to view in full-screen lightroom viewer</p>
+        </div>
+        
+        <div id="lightgallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <a href="IMG-20241127-WA0001.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0001.jpg" alt="Editorial Lookbook 1" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+            <a href="IMG-20241127-WA0003.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0003.jpg" alt="Editorial Lookbook 2" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+            <a href="IMG-20241127-WA0002.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0002.jpg" alt="Editorial Lookbook 3" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+            <a href="IMG-20241127-WA0006.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0006.jpg" alt="Editorial Lookbook 4" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+            <a href="IMG-20241127-WA0007.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0007.jpg" alt="Editorial Lookbook 5" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+            <a href="IMG-20241127-WA0004.jpg" class="group relative aspect-[3/4] overflow-hidden rounded-xl bg-zinc-900">
+                <img src="IMG-20241127-WA0004.jpg" alt="Editorial Lookbook 6" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-zinc-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <i class="fa-solid font-light fa-expand text-white text-xl"></i>
+                </div>
+            </a>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="https://formspree.io/f/xpwzylop" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+
+    <!-- Connect & Booking Contact -->
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 border-t border-zinc-900">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl">Direct Booking & Social</h2>
+                <p class="text-zinc-400 font-light leading-relaxed">Available for fashion shows, brand campaigns, commercial projects, and agency casting inquiries worldwide.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.instagram.com/lovely_kotla" target="_blank" class="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-300 hover:border-rose-500 hover:text-rose-400 transition-all">
+                        <i class="fab fa-instagram text-lg"></i>
+                    </a>
+                    <a href="https://www.threads.net/@lovely_kotla" target="_blank" class="w-12 h-12 rounded-full border border-zinc-800 flex items-center justify-center text-zinc-300 hover:border-rose-500 hover:text-rose-400 transition-all">
+                        <i class="fab fa-threads text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl">Work Request</h2>
+                <form action="https://formspree.io/f/xpwzylop" method="POST" class="space-y-4">
+                    <input type="text" name="name" placeholder="Full Name / Agency Name" required class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-rose-500 transition-colors">
+                    <input type="email" name="email" placeholder="Business Email" required class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-rose-500 transition-colors">
+                    <textarea name="message" rows="4" placeholder="Project Details & Location" required class="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-rose-500 transition-colors resize-none"></textarea>
+                    <button type="submit" class="w-full py-3.5 bg-rose-500 hover:bg-rose-600 font-medium text-white rounded-lg transition-colors shadow-lg shadow-rose-500/20">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2024 Sai Manaswini Kotla Portfolio</p>
+
+    <footer class="py-8 border-t border-zinc-900 text-center text-xs text-zinc-600">
+        &copy; 2026 Sai Manaswini Kotla. All Rights Reserved.
     </footer>
-    <!-- Smooth Scrolling Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
